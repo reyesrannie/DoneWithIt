@@ -1,15 +1,14 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 
-import WelcomeScreen from './app/screens/WelcomeScreen';
-import VeiwingScreen from './app/screens/VeiwingScreen';
-import AppButton from './app/components/AppButton';
-import styles from './app/components/styles';
+import WelcomeScreen from './app/screens/WelcomeScreen/WelcomeScreen';
+import VeiwingScreen from './app/screens/ViewingScreen/VeiwingScreen';
+
+import CardComponent from './app/components/CardComponent';
+import CardViewScreen from './app/screens/CardViewScreen/CardViewScreen';
 
 export default function App() {
   
   return (
-    <WelcomeScreen />
+    <CardViewScreen />
   );
 }
 
