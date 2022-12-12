@@ -19,9 +19,9 @@ import AppButton from './app/components/AppButton';
 export default function App() {
   const [firstName, setFirstName] = useState('');
   return (
-  <CardViewScreen>
+  <WelcomeScreen>
 
-  </CardViewScreen>
+  </WelcomeScreen>
  
   );
 }
