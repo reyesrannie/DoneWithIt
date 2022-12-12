@@ -8,15 +8,13 @@ import ListItemDeleteAction from './app/components/ListItemDeleteAction';
 import ListItem from './app/components/ListItem';
 import AreaScreenComponent from './app/components/AreaScreenComponent';
 import Icon from './app/components/Icon';
+import AccountScreen from './app/screens/AccountScreen/AccountScreen';
+import ListingScreen from './app/screens/ListingScreen/ListingScreen';
 
 export default function App() {
   
   return (
-    <AreaScreenComponent >
-    <ListItem title="My title"  ImageComponent={
-    <Icon 
-    name="email"/>}/>
-    </AreaScreenComponent>
+  <ListingScreen />
   );
 }
 
