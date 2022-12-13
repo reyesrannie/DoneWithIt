@@ -16,11 +16,12 @@ import { Switch, Text, TextInput } from 'react-native';
 import AppTextInput from './app/components/AppTextInput';
 import AppButton from './app/components/AppButton';
 import LoginScreen from './app/screens/LoginScreen/LoginScreen';
+import ListingEditScreen from './app/screens/ListingScreen/ListingEditScreen';
 
 export default function App() {
 
   return (
-  <LoginScreen></LoginScreen>
+  <ListingEditScreen></ListingEditScreen>
   );
 }
 
