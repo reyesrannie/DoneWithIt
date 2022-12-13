@@ -15,7 +15,6 @@ import ListingScreen from './app/screens/ListingScreen/ListingScreen';
 import { Switch, Text, TextInput } from 'react-native';
 import AppTextInput from './app/components/AppTextInput';
 import AppButton from './app/components/AppButton';
-import AppPicker from './app/components/AppPicker';
 import LoginScreen from './app/screens/LoginScreen/LoginScreen';
 
 export default function App() {
