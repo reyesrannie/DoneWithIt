@@ -1,15 +1,30 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
+import * as ImagePicker from 'expo-image-picker';
+
+import AreaScreenComponent from './app/components/AreaScreenComponent';
+import { Button, Image } from 'react-native';
+import ImageImport from './app/components/ImageImport';
+import ImageImportList from './app/components/ImageImportList';
 
 
-import RegisterScreen from './app/screens/RegisterScreen/RegisterScreen';
-import ListingDetailsScreen from './app/screens/ListingScreen/ListingDetailsScreen';
-import ListingEditScreen from './app/screens/ListingScreen/ListingEditScreen';
-import ListingScreen from './app/screens/ListingScreen/ListingScreen';
-import MessagesScreen from './app/screens/MessageScreen/MessagesScreen';
 export default function App() {
+const [imageUris, setImageUris] = useState([]);
 
+const handleAdd = (uri) => {
+  setImageUris([...imageUris, uri]);
+}
+const handleRemove = (uri) => {
+  setImageUris(imageUris.filter((imageUri) => imageUri !== uri));
+}
   return (
-  <ListingEditScreen />
+  <AreaScreenComponent>
+  <ImageImportList
+  imageUris={imageUris}
+  onAddImage={handleAdd} 
+  onRemoveImage={handleRemove} 
+  
+  />
+  </AreaScreenComponent>
   );
 }
 
