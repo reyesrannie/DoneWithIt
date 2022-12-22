@@ -8,12 +8,9 @@ import {
 } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 
-import navigationTheme from "./app/navigation/navigationTheme";
 import AreaScreenComponent from "./app/components/AreaScreenComponent";
 import AuthNavigator from "./app/navigation/AuthNavigator";
 import AppNavigator from "./app/navigation/AppNavigator";
-import FeedNavigator from "./app/navigation/FeedNavigator";
-import ActivityIndicator from "./app/components/ActivityIndicator";
 
 const Link = () => {
   const navigation = useNavigation();
@@ -60,9 +57,8 @@ const TabNavigator = () => (
 
 export default function App() {
   return (
-    // <NavigationContainer>
-    //   <AppNavigator />
-
-    <ActivityIndicator visible={true} />
+    <NavigationContainer>
+      <AppNavigator />
+    </NavigationContainer>
   );
 }
